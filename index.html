@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <title>Cercle de Programmeur Full Stack</title>
+        <meta charset="utf_8">
+        <link rel="stylesheet" href="none.css">
+    </head>
+    <body>
+        
+        <h6>Myconol stocklin  </h6><h1>Myconsol stocklin  </h1>
+        <hb>stocklin key</hb>
+        <h><strong>Home</strong><hr></h>
+          <input type="text" placeholder="Recherche dans l'historique" id="recherche"><div id="contenu">
+          <!--1-->
+      <style>
+        #carousel {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          width: 1190px;
+          height: 450px;
+        }
+        
+        #carousel img {
+          width: 0%;
+          height: 400px;
+          margin: 0 10px;
+          transition: all 0.5s;
+        }
+        
+        #carousel img.center {
+          width: 90%;
+          height: 100%;
+          box-shadow: 0 50px 30px rgba(0, 0, 0, 0.5);
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+          position: relative;
+          margin-left: 10px;
+        }
+      </style>
+      <br>
+      <marque scrollamount="1">
+      <div id="carousel">
+        <img class="center" src="https://images3.alphacoders.com/831/831673.jpg">
+        <img src="https://i.ytimg.com/vi/aseydQlLelc/maxresdefault.jpg">
+        <img src="https://cdn-europe1.lanmedia.fr/var/europe1/storage/images/europe1/technologies/playstation-vr-ce-que-lon-sait-deja-du-casque-de-realite-virtuelle-de-sony-2694586/26188621-1-fre-FR/PlayStation-VR-ce-que-l-on-sait-deja-du-casque-de-realite-virtuelle-de-Sony.jpg">
+        <img src="https://wallpaperaccess.com/full/9136.jpg">
+        <img src="https://lwmag.co.za/wp-content/uploads/2020/06/DUALSENSE-2.jpg">
+      </div></marquee>
+    
+      <script>
+        let currentIndex = 0;
+        const carouselImages = Array.from(document.querySelectorAll('#carousel img'));
+    
+        function updateCarousel() {
+          carouselImages.forEach((img, index) => {
+            if (index === currentIndex) {
+              img.classList.add('center');
+            } else if (index === currentIndex - 1 || index === currentIndex + 1) {
+              img.classList.remove('center');
+            }
+          });
+        }
+    
+        function moveCarousel(direction) {
+          if (direction === 'left') {
+            currentIndex = (currentIndex === 0) ? carouselImages.length - 1 : currentIndex - 1;
+          } else {
+            currentIndex = (currentIndex === carouselImages.length - 1) ? 0 : currentIndex + 1;
+          }
+          updateCarousel();
+        }
+    
+        function autoMoveCarousel() {
+          moveCarousel('right');
+        }
+    
+        setInterval(autoMoveCarousel, 8000);
+    
+        document.addEventListener('DOMContentLoaded', updateCarousel);
+    
+        document.addEventListener('click', function(event) {
+          const target = event.target;
+          if (target.tagName === 'IMG' && target !== carouselImages[currentIndex]) {
+            const imgIndex = carouselImages.indexOf(target);
+            const direction = (imgIndex < currentIndex) ? 'left' : 'right';
+            currentIndex = imgIndex;
+            updateCarousel();
+            moveCarousel(direction);
+          }
+        });
+      </script> 
+      <br>
+      <!--11-->
+    <script>
+      function changeColors() {
+        var select = document.getElementById("colorSelect");
+        var color = select.value;
+        
+        var backgroundColor = "gray";
+        var textColor = "black";
+        var haColor = "green";
+        var hbColor = "maroon";
+        var hcColor = "red";
+        
+        if (color === "red") {
+          backgroundColor = "lightpink";
+          textColor = "darkred";
+          haColor = "darkgreen";
+          hbColor = "brown";
+          hcColor = "darkred";
+        } else if (color === "green") {
+          backgroundColor = "lightgreen";
+          textColor = "darkgreen";
+          haColor = "green";
+          hbColor = "darkgreen";
+          hcColor = "darkred";
+        } else if (color === "blue") {
+          backgroundColor = "lightblue";
+          textColor = "darkblue";
+          haColor = "green";
+          hbColor = "darkorange";
+          hcColor = "blue";
+        }
+        
+        document.body.style.backgroundColor = backgroundColor;
+        document.body.style.color = textColor;
+        
+        var ha = document.getElementById("ha");
+        ha.style.color = haColor;
+        
+        var hb = document.getElementById("hb");
+        hb.style.color = hbColor;
+        
+        var hc = document.getElementById("hc");
+        hc.style.color = hcColor;
+      }
+    </script>
+    <h2>Dicovery the new technology</h2>
+    <theme>
+    <label for="colorSelect">Theme:</label>
+    <select id="colorSelect" onchange="changeColors()">
+      <option value="gray">Gris</option>
+      <option value="red">Rouge</option>
+      <option value="green">Vert</option>
+      <option value="blue">Bleu</option>
+    </select>
+    <br><br><br>
+    <a href="inscriptoin.html">Compte&boxbox;</a><br><br><br><a href="#">Learn&Xopf;</a><br><br>
+          <br><a href="PPP.html">Office&checkmark;</a><br><br>
+          <br><a href="#">Histo</a>&boxbox;</a><br><br><br><br><br><br><br><br><br>
+          <br><a href="#">Safe</a><br>
+          <br><a href="#">Discon&xotime;</a><br>
+    </theme>
+    <p id="ha">Hello everyone</p>
+    <p id="hb">Dicovery your I.A "Virtual Assistance</p>
+    <p id="hc">Start your experince</p>
+    <area shape="RR" coords="" href="captures.lumalabs.ai" alt="RRE">
+    <a href="captures.lumalabs.ai">Start</a>
+
+    <iframe width="860" height="515" src="https://www.youtube.com/embed/9b7swy075vg?start=890" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <script src="https://www.youtube.com/embed/9b7swy075vg?start=890"></script>
+    <div id="player"></div>
+    <script>
+      function onYouTubeIframeAPIReady() {
+        var player = new YT.Player('player', {
+          height: '0',
+          width: '0',
+          videoId: '9b7swy075vg', // Remplacez par l'ID de votre vidéo
+          playerVars: {
+            autoplay: 1,
+            controls: 0,
+            showinfo: 0,
+            modestbranding: 1,
+            loop: 1,
+            playlist: '9b7swy075vg' // Remplacez par l'ID de votre vidéo
+          }
+        });
+      }
+    </script>
+    
+    
+    </div>
+    
+</html>
+<style>
+  html{
+    size: 10%;
+}
+.toggleButton_gllP, html {
+    -webkit-tap-highlight-color: transparent;
+}
+:where(:root) {
+    --docusaurus-highlighted-code-line-bg: #484d5b;
+  }
+  body {
+  backdrop-filter: blur(100px); /* Flou de 10 pixels */
+  color: rgb(80, 75, 59);
+  position:fixe;
+  align-self: center;
+  
+}
+h1{
+    background-color: rgb(238, 238, 238);
+    color:rgb(126, 86, 0);
+    padding: 12px;
+    width: 100%;
+    margin: -8px;
+    position:relative;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+    border-block-end: 50px;
+    border-top-right-radius: -100px;
+}
+h2{
+  color: rgb(126, 86, 0);
+}
+h6{
+    background-color: rgb(238, 238, 238);
+    padding: 18px;
+    margin: -px;
+    width: 100%;
+    position: absolute;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+    border-block-end: 50px;
+    border-top-right-radius: -100px;
+}
+#recherche{
+    width: 500px;
+    height: 20px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+    margin: -20px;
+    float: right;
+    top: -500PX
+}
+#contenu{
+    float: left;
+    right: 10px;
+    padding: 120px;
+    margin-top:  -90px;
+    max-width: 1000px;
+    position: relative;
+}
+h{
+    background-color:rgb(238, 238, 238);
+    max-width: 100px;
+    height: 2750px;
+    padding: 20px;
+    margin: -8px;
+    top: 60px;
+    position: fixed;
+    box-shadow: 0 50px 30px rgba(0, 0, 0, 0.5);
+}
+hb{
+    background-color:rgb(238, 238, 238);
+    max-width: 55px;
+    height: 2750px;
+    padding: 20px;
+    margin: -8px;
+    top: 60px;
+    position: fixed;
+    box-shadow: 0 50px 30px rgba(0, 0, 0, 0.5);
+}
+theme{
+  background-color:rgba(243, 243, 243, 0);
+  color: rgb(7, 79, 112);
+    max-width: 50px;
+    padding: 18px;
+    margin: -130px;
+    left: 115px;
+    top: 230px;
+    position: fixed;
+}
+a{
+  color: rgb(7, 79, 112);
+}
+</style>
